@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Satoshi Variable', sans-serif;
+    background-color: #FCFAF7;
+}
+
+.text-glow {
+    text-shadow:
+      0 8px 72px hsl(0, 75%, 64%);
+}
