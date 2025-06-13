@@ -69,7 +69,6 @@
   <meta property="og:description" content="Building blazing-fast, modern websites using the latest tech and best UX principles." />
   <meta property="og:url" content="https://yourdomain.com/service/web-development" />
   <meta property="og:type" content="website" />
-  <meta property="theme-color" content="#DE2020" />
 </svelte:head>
 
 <main>

@@ -125,7 +125,6 @@
   <meta property="og:description" content="Design-driven digital studio building intuitive web experiences for startups and creators." />
   <meta property="og:url" content="https://yourdomain.com/" />
   <meta property="og:type" content="website" />
-  <meta property="theme-color" content="#DE2020" />
 </svelte:head>
 
 <section id="about-section" class="absolute w-full max-w-dvw overflow-hidden z-8">

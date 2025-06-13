@@ -57,12 +57,11 @@
 <svelte:head>
   <title>UX Design Services – Studio Luoda</title>
   <meta name="description" content="User-centered design for web and product experiences that are intuitive, accessible, and delightful." />
-  <meta name="keywords" content="UX design, UI design, user experience, interface design, accessibility, product design" />
+  <meta name="keywords" content="UX design, UI design, user experience, interface design, accessibility" />
   <meta property="og:title" content="UX Design Services – Studio Luoda" />
   <meta property="og:description" content="Design systems and interfaces that prioritize usability, aesthetics, and brand identity." />
   <meta property="og:url" content="https://yourdomain.com/service/ux-design" />
   <meta property="og:type" content="website" />
-  <meta property="theme-color" content="#DE2020" />
 </svelte:head>
 
 <main>

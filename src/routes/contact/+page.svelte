@@ -59,7 +59,6 @@
 	/>
 	<meta property="og:url" content="https://yourdomain.com/contact" />
 	<meta property="og:type" content="website" />
-	<meta property="theme-color" content="#DE2020" />
 </svelte:head>
 
 <main>

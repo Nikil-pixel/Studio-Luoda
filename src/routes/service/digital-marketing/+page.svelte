@@ -54,7 +54,6 @@
   <meta property="og:description" content="Boost your brand with intelligent marketing strategies tailored to your audience." />
   <meta property="og:url" content="https://yourdomain.com/service/digital-marketing" />
   <meta property="og:type" content="website" />
-  <meta property="theme-color" content="#DE2020" />
 </svelte:head>
 
 <section class="min-h-dvh px-6 py-20 text-neutral-900 flex items-center justify-center overflow-hidden relative">
