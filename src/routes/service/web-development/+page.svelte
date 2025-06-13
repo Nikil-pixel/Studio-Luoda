@@ -62,9 +62,14 @@
 </script>
 
 <svelte:head>
-	<title>Web development Service</title>
-	<meta name="description" content="Web development service | Studio Luoda" />
-	<meta name="theme-color" content="#de2020" />
+  <title>Web Development Services – Studio Luoda</title>
+  <meta name="description" content="Custom web development tailored to your brand's goals – optimized for performance, accessibility, and scalability." />
+  <meta name="keywords" content="web development, frontend development, SvelteKit, responsive websites, fast websites, custom websites" />
+  <meta property="og:title" content="Web Development Services – Studio Luoda" />
+  <meta property="og:description" content="Building blazing-fast, modern websites using the latest tech and best UX principles." />
+  <meta property="og:url" content="https://yourdomain.com/service/web-development" />
+  <meta property="og:type" content="website" />
+  <meta property="theme-color" content="#DE2020" />
 </svelte:head>
 
 <main>

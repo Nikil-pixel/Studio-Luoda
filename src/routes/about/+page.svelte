@@ -1,7 +1,14 @@
 <svelte:head>
-	<title>Studio Luoda | About</title>
-	<meta name="description" content="About Studio Luoda" />
+  <title>About Us – Studio Luoda</title>
+  <meta name="description" content="Get to know the team behind Studio Luoda – passionate designers and developers crafting meaningful digital products." />
+  <meta name="keywords" content="about Studio Luoda, design team, development team, creative studio, digital creators" />
+  <meta property="og:title" content="About Studio Luoda" />
+  <meta property="og:description" content="Meet the creative minds shaping intuitive, performance-focused web experiences." />
+  <meta property="og:url" content="https://yourdomain.com/about" />
+  <meta property="og:type" content="website" />
+  <meta property="theme-color" content="#DE2020" />
 </svelte:head>
+
 
 <main>
 	<section class="py-32 px-6 sm:px-10 lg:px-20 bg-white text-neutral-900">

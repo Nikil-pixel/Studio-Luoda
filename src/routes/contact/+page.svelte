@@ -7,16 +7,20 @@
 	let message = '';
 	let submitted = false;
 	let errorMessage = '';
+	let loading = false; // 🆕 loading state
 
 	const handleSubmit = async () => {
 		submitted = false;
 		errorMessage = '';
+		loading = true; // 🟡 Start loading
 
 		const res = await fetch('/contact', {
 			method: 'POST',
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify({ name, email, message })
 		});
+
+		loading = false; // 🔵 Stop loading
 
 		if (res.ok) {
 			submitted = true;
@@ -26,22 +30,36 @@
 
 			setTimeout(() => {
 				submitted = false;
-			}, 5000); // hide success after 5s
+			}, 5000);
 		} else {
 			const error = await res.json();
 			errorMessage = error?.error || 'Unknown error';
 
 			setTimeout(() => {
 				errorMessage = '';
-			}, 5000); // hide error after 5s
+			}, 5000);
 		}
 	};
 </script>
 
-
 <svelte:head>
-	<title>Studio Luoda | Contact</title>
-	<meta name="description" content="Svelte demo app" />
+	<title>Contact Us – Studio Luoda</title>
+	<meta
+		name="description"
+		content="Let's collaborate. Reach out to Studio Luoda for custom web design, development, or creative tech services."
+	/>
+	<meta
+		name="keywords"
+		content="contact Studio Luoda, work with us, design inquiries, web studio contact, digital collaboration"
+	/>
+	<meta property="og:title" content="Contact Studio Luoda" />
+	<meta
+		property="og:description"
+		content="Get in touch to start your next digital project with a creative team that cares."
+	/>
+	<meta property="og:url" content="https://yourdomain.com/contact" />
+	<meta property="og:type" content="website" />
+	<meta property="theme-color" content="#DE2020" />
 </svelte:head>
 
 <main>
@@ -106,9 +124,32 @@
 
 				<button
 					type="submit"
-					class="bg-black text-white px-6 py-2 rounded-md hover:bg-[#DE2020] transition"
+					class="bg-black text-white px-6 py-2 rounded-md hover:bg-[#DE2020] transition flex items-center justify-center gap-2"
+					disabled={loading}
 				>
-					Send Message
+					{#if loading}
+						<!-- You can use an SVG spinner or just text -->
+						<svg
+							class="animate-spin h-5 w-5 text-white"
+							xmlns="http://www.w3.org/2000/svg"
+							fill="none"
+							viewBox="0 0 24 24"
+						>
+							<circle
+								class="opacity-25"
+								cx="12"
+								cy="12"
+								r="10"
+								stroke="currentColor"
+								stroke-width="4"
+							></circle>
+							<path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
+							></path>
+						</svg>
+						Sending...
+					{:else}
+						Send Message
+					{/if}
 				</button>
 			</form>
 		</div>

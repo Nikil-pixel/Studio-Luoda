@@ -14,7 +14,7 @@
 			.from('.about-heading', { opacity: 0, y: 20, duration: 1 })
 			.from('.about-subtext', { opacity: 0, y: 10, duration: 0.8 }, '-=0.6')
 			.from('.about-description', { opacity: 0, y: 10, duration: 0.8 }, '-=0.6')
-			.to('.about-heading', { opacity: 0, y: -20, duration: 0.6, delay: 0.3 })
+			.to('.about-heading', { opacity: 0, y: -20, duration: 0.6, delay: 0.6 })
 			.to('.about-subtext', { opacity: 0, y: -10, duration: 0.4 }, '-=0.6')
 			.to('.about-description', { opacity: 0, y: -10, duration: 0.4 }, '-=0.6')
 			.to('.about-wrapper', { opacity: 0 })
@@ -118,8 +118,14 @@
 </script>
 
 <svelte:head>
-	<title>Studio Luoda | Home</title>
-	<meta name="description" content="Svelte demo app" />
+  <title>Studio Luoda – Elevating Digital Experiences</title>
+  <meta name="description" content="Studio Luoda is a creative tech studio crafting elegant, high-performance digital experiences through design and development." />
+  <meta name="keywords" content="Studio Luoda, web design, web development, UX design, digital studio, creative tech, modern websites, UI/UX" />
+  <meta property="og:title" content="Studio Luoda – Elevating Digital Experiences" />
+  <meta property="og:description" content="Design-driven digital studio building intuitive web experiences for startups and creators." />
+  <meta property="og:url" content="https://yourdomain.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="theme-color" content="#DE2020" />
 </svelte:head>
 
 <section id="about-section" class="absolute w-full max-w-dvw overflow-hidden z-8">

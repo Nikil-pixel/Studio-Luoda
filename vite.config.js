@@ -1,10 +1,9 @@
-import dotenv from 'dotenv';
-dotenv.config();
-
 import tailwindcss from '@tailwindcss/vite';
 import { svelteTesting } from '@testing-library/svelte/vite';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
+import dotenv from 'dotenv';
+dotenv.config();
 
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit(),],
@@ -13,7 +12,16 @@ export default defineConfig({
     	port: 5173,
 		allowedHosts: [
       		'4178-2401-4900-93e6-7ddb-e533-5344-33b7-b0db.ngrok-free.app'
-    ]
+    ],
+	build: {
+  		minify: 'terser',
+  		terserOptions: {
+  			compress: {
+  	    		drop_console: true,
+	    		drop_debugger: true,
+    		}
+  		}
+	}
   	},
 	test: {
 		workspace: [
