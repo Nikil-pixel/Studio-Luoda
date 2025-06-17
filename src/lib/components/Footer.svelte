@@ -24,7 +24,7 @@
 
   const socials = [
     { name: 'Instagram', href: 'https://www.instagram.com/studio_luoda/', icon: instagram },
-    { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61577405181360&sk=about', icon: facebook },
+    { name: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61577267641698', icon: facebook },
     { name: 'Dribbble', href: 'https://dribbble.com/Studio_Luoda', icon: dribbble },
     { name: 'X', href: 'https://x.com/Studio_Luoda', icon: x }
   ];
@@ -87,7 +87,7 @@
         </li>
         <li class="flex items-center gap-2">
           <img src={mail} alt="email" class="w-4">
-          <a href="mailto:hello@studioluoda.com" class="hover:text-white">hello@studioluoda.com</a>
+          <a href="mailto:hello@studioluoda.com" class="hover:text-white">hello@luoda.studio</a>
         </li>
       </ul>
     </div>
@@ -96,6 +96,6 @@
 
   <!-- Legal Links -->
   <div class="max-w-7xl mx-auto mt-12 border-t text-xs border-stone-800 py-6 text-neutral-300">
-    <div class="">&copy; {new Date().getFullYear()} Studio Luoda. All rights reserved.</div>
+    <div class="text-center">&copy; {new Date().getFullYear()} Studio Luoda. All rights reserved.</div>
   </div>
 </footer>

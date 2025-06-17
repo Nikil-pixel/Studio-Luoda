@@ -241,9 +241,7 @@
 	<div class="p-4 text-lg text-center sticky top-14 text-stone-400 bg-stone-700 z-9">
 		What we do?
 	</div>
-	<section
-		class="py-16 px-6 sm:px-8 lg:px-12 text-neutral-900 backdrop-blur-2xl bg-[hsla(0,0%,100%,0.3)]"
-	>
+	<section class="py-16 px-6 sm:px-8 lg:px-12 text-neutral-900 backdrop-blur-2xl bg-[hsla(0,0%,100%,0.3)]">
 		<div class="max-w-7xl mx-auto space-y-12">
 			<!-- Heading -->
 			<div class="text-center space-y-4">
